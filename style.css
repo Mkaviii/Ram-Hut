@@ -1,0 +1,121 @@
+:root{
+    --yellow:#FAEF5D;
+    --pink:#FF004D;
+    --purple:#7E2553;
+    --blue:#1D2B53;
+    --white:#F8F4EC;
+    --green:#65B741;
+    --brown:#A9B388;
+    --darkblue:#030637;
+
+}
+
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url("https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=400");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color:var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+header{
+    display:flex;
+    padding: 1em;
+    
+}
+#logo{
+    flex:3;
+    font: size 1.25em;
+}
+nav{
+    flex:2;
+    display: flex;
+}
+nav a{
+    flex:1;
+
+}
+nav a:hover{
+    color: var(--pink);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:40vh;
+    justify-content: center;
+    padding:1em;
+}
+
+.tagline1{
+    color:var(--purple) ;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+    font-size: 1em;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 10em;
+    margin-top: 1em;
+    border-radius: 10px;
+    color:var(--green);
+    border-color: var(--darkblue);
+
+    
+}
+
+.Menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit);
+    background-color: rgb(48, 45, 45);
+    color:var(--white);
+    
+}
+#menuheading{
+    background-color: rgb(48, 45, 45);
+    color:var(--pink);
+    font-size:2em;
+    display: flex;
+    justify-content: center;
+
+}
+#locheading{
+    background-color: rgb(48, 45, 45);
+    color: var(--pink);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.Menu th{
+    color: #65B741;
+    font-size: 2em;
+}
+table{
+    width: 100%;
+    padding: 1.5em;
+
+}
+.Menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.Menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.Menu td:nth-child(2){
+    justify-self: right;
+}
